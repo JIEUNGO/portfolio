@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+*{margin: 0;padding: 0;}
+html{overflow-y:scroll;}
+li{list-style:none;}
+img{max-width: 100%;}
+fieldset{border:none;}
+legend, hr, .blind {position:absolute; left:-9999px;}
+caption{text-indent:-9999px; height:0; overflow:hidden; visibility:hidden;}
+img,button,input[type="submit"],input[type="button"],input[type="reset"]{ border:none; vertical-align:middle;}
+a{text-decoration:none; color:#101010;}
+body, input, textarea, select, button{ color:#101010; font:14px/1.33 lato, Nanum Gothic,'나눔고딕', Malgun Gothic, '맑은고딕', Dotum, '돋움', arial, sans-serif;}
+input, select, button {vertical-align:middle;}
+input[type="text"], input[type="email"],input[type="url"], input[type="search"],input[type="password"], select, textarea{border:1px solid #c8c8c8;}
+address, em{font-style:normal;}
+h1, h2, h3, h4, h5, h6, strong{font-size:100%; font-weight:normal;}
+.clearFix:after{content:""; display:block;clear:both;}
+.clearFix{*zoom:1;}
+button, input[type="button"], input[type="submit"], input[type="reset"]{cursor:pointer;}
+table{border-collapse:collapse;border-spacing:0;}
+th{font-weight: normal;}
+textarea{resize:none;vertical-align: middle;padding: 2px;}
+*,
+*:after,*:before {box-sizing: border-box;}
+#wrap{position: relative;width: 100%;}
+/* #header{position: absolute;top:0;right: 0;} */
+#nav{z-index: 10;position: fixed;top:0;left: 0;width: 100%;display: none;}
+#nav ul{background-color: #3c3c3c;}
+#nav ul>li{float: left;width:12.5%;height: 80px;border-left: 1px solid #4c4c4c;}
+#nav ul>li:first-child{background: #f6f6f6;border-left: none;}
+#nav ul>li>h1{padding: 30px;text-align: center;}
+#nav ul>li>a{text-align: center;display: block;padding: 30px;color:#fff;}
+#container{width: 100%;background-color: #f6f6f6;}
+#container section h2{font-size: 35px;padding: 24px 0 54px 66px;background: url(../images/common/bg_line_h2.png) 66px 0 no-repeat;color:#3d3d3d;}
+#container section h2 span{font-size: 48px;font-weight: bold;}
+#container section{padding: 37px 0;}
+
+.slideBabber>li{width: 100%;}
+.slideBabber>li>img{width: 100%;}
