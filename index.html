@@ -7,10 +7,22 @@
   <meta name="Description" content="퍼블리셔 고지은 포트폴리오입니다">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="images/common/ggozi.ico">
   <script type="text/javascript" src="js/html5shiv.min.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-  <script type="text/javascript"></script>
+  <script type="text/javascript">
+  $(function(){
+		$(".slideBanner").delay(300).bxSlider({
+			auto:true,
+ 			controls:false,
+ 			pager:false,
+ 			speed:2000,
+ 			pause:4000,
+
+		});
+	});
+  </script>
   <link rel="stylesheet" type="text/css" href="css/common.css">
   <title>GGOZI PORTFOLIO</title>
  </head>
@@ -33,33 +45,39 @@
 		<div id="container">
 			<section>
 				<h2>HELLO,<br/>MY NAME IS <span>JI-EUN GO</span></h2>
-				<div class="slideBanner_wrap">
-					<ul class="slideBanner">
-						<li>
-							<!-- <img src="images/main/bg_slide1.png" alt="publisher"> -->
-							<p>
-								<span>WEB<br />PUBLISHER</span>
-								<span>HTML / CSS3 / JQUERY / JAVASCRIPT</span>
-							</p>
-						</li>
-						<!-- <li>
-							<img src="images/main/bg_slide2.png" alt="passion">
-							<p>
-								<span>PASSION</span>
-								<span>CYCLE / TRAVEL</span>
-								<span>Dream as if you'll live forever. Live as if you'll die today.</span>
-								<span>-James Dean-</span>
-							</p>
+				<div class="frame">
+					<ul class="slideBanner clearFix">
+						<li>								
+							<div class="slideContent">
+								<img src="images/main/bg_slide1.png" alt="publisher">
+								<p>
+									<span>WEB<br />PUBLISHER</span>
+									<span>HTML / CSS3 / JQUERY / JAVASCRIPT</span>
+								</p>
+							</div>
 						</li>
 						<li>
-							<img src="images/main/bg_slide3.png" alt="record">
-							<p><span>RECORD</span></p>
-							<ul>
-								<li><a href="http://blog.naver.com/fulgidg"><img src="images/main/slide3_icon1.png" alt="blog"><span>blog</span></a></li>
-								<li><a href="http://instagram.com/gggoziii"><img src="images/main/slide3_icon2.png" alt="instagram"><span>instagram</span></a></li>
-								<li><a href="http://facebook.co.kr/FulgidG"><img src="images/main/slide3_icon3.png" alt="facebook"><span>facebook</span></a></li>
-							</ul>
-						</li> -->
+							<div class="slideContent">
+								<img src="images/main/bg_slide2.png" alt="passion">
+								<p>
+									<span>PASSION</span>
+									<span>CYCLE / TRAVEL</span>
+									<span>Dream as if you'll live forever. Live as if you'll die today.</span>
+									<span>-James Dean-</span>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="slideContent">
+								<img src="images/main/bg_slide3.png" alt="record">
+								<p><span>RECORD</span></p>
+								<div class="sns_wrap">
+									<a href="http://blog.naver.com/fulgidg"><img src="images/main/slide3_icon1.png" alt="blog"><span>blog</span></a>
+									<a href="http://instagram.com/gggoziii"><img src="images/main/slide3_icon2.png" alt="instagram"><span>instagram</span></a>
+									<a href="http://facebook.co.kr/FulgidG"><img src="images/main/slide3_icon3.png" alt="facebook"><span>facebook</span></a>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</section>
