@@ -8,53 +8,182 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <link rel="shortcut icon" type="image/x-icon" href="images/common/ggozi.ico">
+  <!--[if lte IE 8]>
+  	<style>
+  	  body{min-width:1280px;}
+  	 	#header,#container{min-width: 1204px;margin: 0 auto;}
+  		#header #works{height: 825px;}
+  		#container #main a span{margin-left: 5px !important;}
+  	</style>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="css/common.css">
   <script type="text/javascript" src="js/html5shiv.min.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-  <script type="text/javascript">
-  </script>
-  <link rel="stylesheet" type="text/css" href="css/common.css">
-  <title>GGOZI PORTFOLIO</title>
+	<script type="text/javascript" src="js/typed.js"></script>
+<!-- 	<script type="text/javascript" src="js/jquery.backgroundSize.js"></script> -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <title>JI-EUN GO ─ WEB PUBLISHER</title>
  </head>
  <body>
 	<div id="wrap">
 		<header id="header">
-			<h1><a href="index.html">JI-EUN GO</a></h1>
-			<nav id="nav">
-				<a href="#" class="works_txt">WORKS</a>
+			<p class="skipMenu"><a href="#works_txt">본문바로가기</a></p>
+			<div id="nav_wrap">
+				<h1><a href="index.html">JI-EUN GO</a></h1>
+				<a href="#works" id="works_txt">WORKS</a>
+				<button class="btn_gnb"><span class="blind">전체메뉴</span></button>
+				<nav id="nav">
+					<h2 class="blind">주메뉴</h2>
+					<ul class="clearFix">
+						<li><a href="#skill">SKILL</a></li>					
+						<li><a href="#profile">PROFILE</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+			<section id="works">
+				<h2>WORKS</h2>
 				<ul class="clearFix">
-					<li><a href="#">SKILL</a></li>					
-					<li><a href="#">PROFILE</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li>
+						<figure>
+							<div>
+								<a href="http://ggozi.ivyro.net/SCOTT" target="_blank">
+									<img src="images/work/work_1.png" alt="SCOTT">								
+									<span class="site1">
+											<span><img src="images/work/icon_link.png" alt="사이트이동"></span>
+									</span>
+								</a>
+							</div>
+							<figcaption>
+								<span>SCOTT NORTH ASIA<br /></span>
+								반응형웹<br />
+								<strong>HTML5 / CSS3 / JQUERY<br /></strong>
+								<a href="http://ggozi.ivyro.net/SCOTT/scott-list.html" target="_blank">CORDING LIST</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+								<a href="http://ggozi.ivyro.net/guro" target="_blank">
+									<img src="images/work/work_2.png" alt="SCOTT">								
+									<span class="site1">
+											<span><img src="images/work/icon_link.png" alt="사이트이동"></span>
+									</span>
+								</a>
+							</div>
+							<figcaption>
+								<span>구로도서관<br /></span>
+								반응형웹<br />
+								<strong>HTML5 / CSS3 / JAVASCRIPT (SASS, GULP사용)<br /></strong>
+								<a href="http://ggozi.ivyro.net/guro/guro-list" target="_blank">CORDING LIST</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+								<a href="http://ggozi.ivyro.net/Mcdonald" target="_blank">
+									<img src="images/work/work_3.png" alt="SCOTT">								
+									<span class="site1">
+											<span><img src="images/work/icon_link.png" alt="사이트이동"></span>
+									</span>
+								</a>
+							</div>
+							<figcaption>
+								<span>맥도날드<br /></span>
+								PC WEB<br />
+								<strong>XHTML / CSS / JQUERY<br /></strong>
+								<a href="http://ggozi.ivyro.net/" target="_blank">CORDING LIST</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+								<a href="http://ggozi.ivyro.net/portfolio" target="_blank">
+									<img src="images/work/work_4.png" alt="SCOTT">								
+									<span class="site1">
+											<span><img src="images/work/icon_link.png" alt="사이트이동"></span>
+									</span>
+								</a>
+							</div>
+							<figcaption>
+								<span>포트폴리오<br /></span>
+								반응형웹<br />
+								<strong>HTML5 / CSS3 / JQUERY<br /></strong>
+								<a href="http://ggozi.ivyro.net/" target="_blank">CORDING LIST</a>
+							</figcaption>
+						</figure>
+					</li>
 				</ul>
-			</nav>
+			</section>
 		</header>
 		<div id="container">
-			<section class="works">
-				<h2>WORKS</h2>
-				<ul>
-					<li><a href="#"><figure><a href="#"><img src="" alt=""></a><figcaption></figcaption></figure></a></li>
-					<li><a href="#"><figure><a href="#"><img src="" alt=""></a><figcaption></figcaption></figure></a></li>
-					<li><a href="#"><figure><a href="#"><img src="" alt=""></a><figcaption></figcaption></figure></a></li>
-					<li><a href="#"><figure><a href="#"><img src="" alt=""></a><figcaption></figcaption></figure></a></li>
-				</ul>
-			</section>
-			<section class="main">
-				<h2>"HELLO,<br />&nbsp;&nbsp;MY NAME IS <span>&nbsp;JI-EUN GO</span>"</h2>				
-				<h3>Front-end Development</h3>
+			<section id="main">
+				<h2 class="main_txt">"MY NAME IS JI-EUN GO"</h2>				
+				<h3 class="main_txt1">Front-end Development</h3>
 				<h4>HTML5 / CSS3 / JQUERY</h4>
-				<a href="#"><span>Scroll Down</span></a>
-			</section>			
-			<section>
-				<h2>PROFILE</h2>
-
+				<a href="#" class="scrollDown"><span>Scroll Down</span></a>
 			</section>
-			<section>
+			<section id="skill">
+				<h2>SKILL</h2>
+				<p>Using <strong>XHTML</strong>, <strong>HTML5</strong></p>
+				<p>Using <strong>CSS</strong>, <strong>CSS3</strong> and I Can Use <strong>SASS</strong>.</p>
+				<p>Working On <strong>JQUERY</strong>, <strong>JAVASCRIPT</strong></p>
+				<p><strong>GULP</strong>, <strong>GITHUB</strong>, <strong>FTP</strong> Availabel</p>
+				<p>
+					I Code<br />
+					<strong>Desktop(PC) Web</strong>, <strong>Mobile Web</strong>, <strong>Resposive Web</strong><br />
+					<strong>Cross Browsing</strong> / <strong>Web Standards</strong> / <strong>Web Accessibility</strong>
+				</p>
+			</section>		
+			<section id="profile">
+				<h2>PROFILE</h2>
+				<p class="hello_pro">"안녕하세요. 웹퍼블리셔 고지은 입니다."</p>
+				<p>고지은<br />1987. 11. 30<br />동덕여자대학교 의상디자인과 졸업<br />한국직업전문학교 웹표준 퍼블리싱 실무자 양성 과정 수료</p>
+				<ul class="clearFix">
+					<li><a href="http://blog.naver.com/fulgidg" target="_blank"><img src="images/profile/sns_1.png" alt="블로그"></a></li>
+					<li><a href="http://instagram.com/gggoziii" target="_blank"><img src="images/profile/sns_2.png" alt="인스타그램"></a></li>
+					<li><a href="http://facebook.com/FulgidG" target="_blank"><img src="images/profile/sns_3.png" alt="페이스북"></a></li>
+				</ul>
+				<p class="profile_photo"><span class="blind">my Profile Photo</span></p>				
+			</section>			
+			<section id="contact">
 				<h2>CONTACT</h2>
+				<div class="table_wrap">
+					<span>EMAIL: fulgidg@naver.com</span>
+					<div class="table">
+						<form action="#">
+							<div>
+								<p class="table_row">
+									<span class="table_cell"><label for="uer_name">이름</label></span>
+									<span class="table_cell"><input type="text" name="uer_name" id="uer_name"></span>
+								</p>
+								<p class="table_row">
+									<span class="table_cell"><label for="uer_phone">연락처</label></span>
+									<span class="table_cell"><input type="text" name="uer_phone" id="uer_phone"></span>
+								</p>
+								<p class="table_row">
+									<span class="table_cell"><label for="uer_email">이메일</label></span>
+									<span class="table_cell"><input type="text" name="uer_email" id="uer_email"></span>
+								</p>
+								<p class="table_row">
+									<span class="table_cell"><label for="uer_text">내용</label></span>
+									<span class="table_cell"><textarea name="uer_text" id="uer_text" cols="80" rows="10"></textarea></span>
+								</p>
+							</div>
+							<input type="submit" value="SEND">
+						</form>
+					</div>
+				</div>
 			</section>
 		</div>
 		<footer id="footer">
-			
+			<h2><a href="index.html">JI-EUN GO</a></h2>
+			<p>	&copy;JI-EUN GO PORTFOLIO</p>
+			<p>FONT-END DEVELOPMENT</p>
+			<p>FULGIDG@NAVER.COM</p>
 		</footer>
 	</div>
  </body>
