@@ -94,17 +94,18 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #container #profile ul li:first-child{padding-left: 0;}
 #container #profile .hello_pro{font-size: 30px;font-family: 'Nanum Myeongjo';font-weight: bold;margin-bottom: 54px;}
 #container #profile .profile_photo{background: url(../images/profile/profile_photo.png) center 150px no-repeat;background-attachment: fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;height: 400px;}
-#container #contact{background-color: #585858;padding-bottom: 210px;}
+#container #contact{background-color: #585858;padding:0 10px 210px;}
 #container #contact h2{background-image: url(../images/common/bullet_contact.png);color:#CCCBCA;}
 #container #contact .table_wrap{width: 100%;max-width: 675px;}
 #container #contact span{color:#CCCBCA;}
 #container #contact div{display: table;margin: 0 auto;}
 #container #contact form div{border-top: 1px solid #CCCBCA;border-bottom: 1px solid #CCCBCA;padding: 20px 0;margin-bottom: 25px;}
 #container #contact form .table_row{display: table-row;}
+#container #contact form .table_row .table_cell:first-child{min-width: 60px;}
 #container #contact form .table_cell{display: table-cell;color:#CCCBCA;padding: 5px;}
 #container #contact form .table_cell input[type="text"]{width: 100%;padding: 15px;}
 #container #contact form input[type="submit"]{width: 100px;padding: 5px;border-radius: 5px;font-weight: bold;display: block;margin: 0 auto;}
-#container #contact form textarea{padding: 15px;}
+#container #contact form textarea{padding: 15px;width: 100%;}
 #footer{height: 300px;background: #2d2d2d;text-align: center;padding: 80px 0;}
 #footer h2{padding-bottom: 30px;}
 #footer h2 a{font-size: 26px;color:#FF8A0E;font-weight: bold;}
