@@ -2,16 +2,27 @@
 $(function(){
 	var btnWork = $("#works_txt");
 	var workSec = $("#works")
+	var navA = $("#nav ul li a")
 	workSec.hide();
 	btnWork.on("click",function(){
 		if(workSec.is(":hidden")){
+			navA.filter(".on").removeClass("on");
 			btnWork.text("CLOSE");
+			btnWork.addClass("on");
 			workSec.delay(400).slideDown(500);
 		}
 		else{
-			btnWork.text("WORKS").off('hover').blur();
+			btnWork.text("WORKS").removeClass("on").off('hover').blur();
 			workSec.slideUp(500);
 		}		
+	});
+	navA.on("click", function(){
+		btnWork.text("WORKS").removeClass("on").off('hover').blur();
+		workSec.slideUp(500);
+	});
+	$("#nav_wrap>h1").on("click", function(e) {
+	 	btnWork.text("WORKS").removeClass("on").off('hover').blur();
+		workSec.slideUp(500);
 	});
 });
 
@@ -32,16 +43,24 @@ $(function(){
 			var myH2_t = $(this).offset().top - opt.top;
 			arr.push(myH2_t);
   	});
-    	var m = 0;
+    var m = 0;
 		var gnbChoice = function(){
-			var sct = $(window).scrollTop();
+			var sct = $(window).scrollTop()+80;
 			$.grep(arr,function(d,i){ //d=배열, i=인덱스
 				if(d <= sct){
 					m = i;
 				}
 			});
-/*			ts.filter(".on").removeClass("on");
-			ts.eq(m).addClass("on");*/
+			if(m>0) {
+				ts.filter(".on").removeClass("on");
+				ts.eq(m-1).addClass("on");
+				if(m-1 == 1) {
+						actText_1();
+				}
+			} else {
+				ts.filter(".on").removeClass("on");	
+				actText_k = true;		
+			}
 		}
   	var gnbChoiceHnd= function(){	    			
 			gnbChoice();
@@ -64,7 +83,9 @@ $(function(){
   			var myH2_t = myH2.offset().top - 41;
       	e.preventDefault();
 				$('html, body').animate({scrollTop:myH2_t+"px"}, 1000);
+				$(".scrollDown").off('hover').blur()
 			});
+
 			$(".btn_gnb").on("click",function(){
 		      $("#nav").slideToggle(500);
 		  });
@@ -81,14 +102,18 @@ $(function(){
    typeSpeed: 100
 	});
 });
-$(window).load(function(){
-	$('.hello_pro').typed({
-	 strings:["&#34;안녕하세요.<br />웹퍼블리셔 고지은입니다.&#34;"],
-	 contentType: 'html',
-	 cursorChar:"",
-   typeSpeed: 100
-	});
-});
+var actText_k = true;
+function actText_1() {
+	if(actText_k) {
+		$('.hello_pro').typed({
+		 strings:["&#34;안녕하세요.<br />웹퍼블리셔 고지은입니다.&#34;"],
+		 contentType: 'html',
+		 cursorChar:"",
+	   typeSpeed: 100
+		});
+	}
+	actText_k =false;
+}
 
 /*main scroll button*/ 	
 $(function scrollDown(){
@@ -102,4 +127,12 @@ $(function scrollDown(){
 		var myThis = $(this);
 		myThis.animate({'bottom' : '0'},500).animate({'bottom' : '15px'},500, function(){scrollDown();});
 	}); 
+});
+
+$(function(){
+		$(window).on({scroll:function(){
+			var sct = $(this).scrollTop() / 10;
+			$(".profile_photo").css({top:-sct+"px"})
+		}
+	});
 });

@@ -43,8 +43,8 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #header h1 a{display: block;font-size: 16px;color:#ff8a00;font-weight: bold;}
 .skipMenu a{background: #fff;width: 100%;position: absolute;top:-200px;left: 0;text-align: center;padding: 5px 0;color:#000;font-weight: bold;z-index:10;}
 .skipMenu a:focus{top: 0;display: block;}
-#works_txt{position: absolute;left: 50%;margin-left: -30px;display: inline-block;color:#9d978c;font-weight: bold;text-decoration: line-through;}
-#works_txt:hover,#nav #works_txt:focus{color:#e5bc82;text-decoration: none;transition: color 1s;}
+#works_txt{position: absolute;left: 50%;margin-left: -30px;display: inline-block;color:#9d978c;font-weight: bold;}
+#works_txt:hover,#works_txt:focus,#works_txt.on{color:#e5bc82;text-decoration: none;transition: color 1s;}
 .btn_gnb{width: 35px;height: 35px;position: absolute;top: 0px;right: 20px;background: none;display: none;}
 .btn_gnb:after{content:"\e801";color:#fff;font-family:'fontello';font-size: 30px;}
 #nav{vertical-align: middle;position: absolute;top:10px;right: 10px;}
@@ -53,7 +53,9 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #nav ul li:first-child{padding-left: 0;}
 #nav ul li a{color:#9d978c;font-size: 12px;text-decoration: underline;}
 #nav ul li .on{color:#e5bc82;}
-#header #works h2,#container section h2,#footer section h2{font-size: 30px;padding:50px 100px 20px;background: url(../images/common/bullet_work.png) 80px 51px no-repeat;margin-bottom: 80px;}
+#header #works h2{margin-bottom: 50px;}
+#container section h2,#footer section h2{margin-bottom: 80px;}
+#header #works h2,#container section h2,#footer section h2{font-size: 30px;padding:50px 100px 20px;background: url(../images/common/bullet_work.png) 80px 51px no-repeat;}
 #header #works{background: #f2e6d6;padding-bottom: 100px;width: 100%;overflow-y: scroll;height: 100vh;}
 #header #works ul{padding: 10px 51px;width: 100%;}
 #header #works ul li{float: left;width:33.3333%;}
@@ -94,12 +96,12 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #container #profile .profile_photo{background: url(../images/profile/profile_photo.png) center 150px no-repeat;background-attachment: fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;height: 400px;}
 #container #contact{background-color: #585858;padding-bottom: 210px;}
 #container #contact h2{background-image: url(../images/common/bullet_contact.png);color:#CCCBCA;}
-#container #contact .table_wrap{width: 100%;max-width: 670px;}
+#container #contact .table_wrap{width: 100%;max-width: 675px;}
 #container #contact span{color:#CCCBCA;}
 #container #contact div{display: table;margin: 0 auto;}
 #container #contact form div{border-top: 1px solid #CCCBCA;border-bottom: 1px solid #CCCBCA;padding: 20px 0;margin-bottom: 25px;}
 #container #contact form .table_row{display: table-row;}
-#container #contact form .table_cell{display: table-cell;color:#CCCBCA;padding: 10px;}
+#container #contact form .table_cell{display: table-cell;color:#CCCBCA;padding: 5px;}
 #container #contact form .table_cell input[type="text"]{width: 100%;padding: 15px;}
 #container #contact form input[type="submit"]{width: 100px;padding: 5px;border-radius: 5px;font-weight: bold;display: block;margin: 0 auto;}
 #container #contact form textarea{padding: 15px;}
