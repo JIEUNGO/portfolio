@@ -158,3 +158,7 @@ $(function(){
 		}
 	});
 });
+
+$(function(){
+	$("#loading").delay(800).fadeOut("2000");
+});
