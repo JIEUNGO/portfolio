@@ -3,25 +3,30 @@ $(function(){
 	var btnWork = $("#works_txt");
 	var workSec = $("#works")
 	var navA = $("#nav ul li a")
+	var clickBtn = $(".click")
 	workSec.hide();
 	btnWork.on("click",function(){
 		if(workSec.is(":hidden")){
 			navA.filter(".on").removeClass("on");
+			clickBtn.hide();
 			btnWork.text("CLOSE");
 			btnWork.addClass("on");
 			workSec.delay(400).slideDown(500);
 		}
 		else{
 			btnWork.text("WORKS").removeClass("on").off('hover').blur();
+			clickBtn.show();
 			workSec.slideUp(500);
 		}		
 	});
 	navA.on("click", function(){
 		btnWork.text("WORKS").removeClass("on").off('hover').blur();
+		clickBtn.show();
 		workSec.slideUp(500);
 	});
 	$("#nav_wrap>h1").on("click", function(e) {
 	 	btnWork.text("WORKS").removeClass("on").off('hover').blur();
+	 	clickBtn.show();
 		workSec.slideUp(500);
 	});
 });
@@ -129,6 +134,23 @@ $(function scrollDown(){
 	}); 
 });
 
+/*works click change*/
+var arrTextColor = ["#e5bc82","#9d978c"];
+var txtNum = 0;
+var txtNumAuto = null;
+$(function colorChange(){
+	var clickBtn = $(".click");
+	/*clickBtn.animate({color: '#e5bc82'},300).animate({color: '#9d978c'},300, function(){colorChange();});*/
+	clickBtn.css({color:arrTextColor[txtNum]});
+	txtNum++;
+	if(txtNum>=arrTextColor.length) {
+			txtNum = 0;
+	}
+	if(txtNumAuto) clearTimeout(txtNumAuto);
+	txtNumAuto = setTimeout(colorChange,800);
+});
+
+/*background move*/
 $(function(){
 		$(window).on({scroll:function(){
 			var sct = $(this).scrollTop() / 10;

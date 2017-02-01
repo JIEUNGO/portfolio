@@ -45,6 +45,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .skipMenu a:focus{top: 0;display: block;}
 #works_txt{position: absolute;left: 50%;margin-left: -30px;display: inline-block;color:#9d978c;font-weight: bold;}
 #works_txt:hover,#works_txt:focus,#works_txt.on{color:#e5bc82;text-decoration: none;transition: color 1s;}
+.click{position: absolute;top:10px;right: 50%;margin-right: -70px;color:#9d978c;font-size: 12px;}
 .btn_gnb{width: 35px;height: 35px;position: absolute;top: 0px;right: 20px;background: none;display: none;}
 .btn_gnb:after{content:"\e801";color:#fff;font-family:'fontello';font-size: 30px;}
 #nav{vertical-align: middle;position: absolute;top:10px;right: 10px;}
