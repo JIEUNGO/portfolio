@@ -45,7 +45,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .skipMenu a:focus{top: 0;display: block;}
 #works_txt{position: absolute;left: 50%;margin-left: -30px;display: inline-block;color:#9d978c;font-weight: bold;}
 #works_txt:hover,#works_txt:focus,#works_txt.on{color:#e5bc82;text-decoration: none;transition: color 1s;}
-.click{position: absolute;top:10px;right: 50%;margin-right: -70px;color:#9d978c;font-size: 12px;}
+.click{position: absolute;top:11px;right: 50%;margin-right: -70px;color:#9d978c;font-size: 12px;}
 .btn_gnb{width: 35px;height: 35px;position: absolute;top: 0px;right: 20px;background: none;display: none;}
 .btn_gnb:after{content:"\e801";color:#fff;font-family:'fontello';font-size: 30px;}
 #nav{vertical-align: middle;position: absolute;top:10px;right: 10px;}
@@ -57,6 +57,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #header #works h2{margin-bottom: 50px;}
 #container section h2,#footer section h2{margin-bottom: 80px;}
 #header #works h2,#container section h2,#footer section h2{font-size: 30px;padding:50px 100px 20px;background: url(../images/common/bullet_work.png) 80px 51px no-repeat;}
+
 #header #works{background: #f2e6d6;padding-bottom: 100px;width: 100%;overflow-y: scroll;height: 100vh;}
 #header #works ul{padding: 10px 51px;width: 100%;}
 #header #works ul li{float: left;width:33.3333%;}
@@ -120,6 +121,8 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 	#container #main h2 span{font-size: 50px;}
 	#container #main h3{font-size: 18px;padding: 20px 0 0 70px;}
 	#container #main h4{padding-left:70px;}
+	#container #skill h2{margin-left:9px;}
+	#container #profile h2{margin-left:20px;}
 }
 @media (min-width: 768px) {
 	#nav{display: block !important;}
