@@ -96,7 +96,10 @@ $(function(){
 		  });
 	});
 });
-
+/*smooth move*/
+$(function(){
+	$(".foo, .bar").smoove({moveY:'100px'});
+});
 
 /*타이핑 효과*/
 $(function(){

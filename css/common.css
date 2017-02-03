@@ -58,7 +58,6 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #header #works h2{margin-bottom: 50px;}
 #container section h2,#footer section h2{margin-bottom: 80px;}
 #header #works h2,#container section h2,#footer section h2{font-size: 30px;padding:50px 100px 20px;background: url(../images/common/bullet_work.png) 80px 51px no-repeat;}
-
 #header #works{background: #f2e6d6;padding-bottom: 100px;width: 100%;overflow-y: scroll;height: 100vh;}
 #header #works ul{padding: 10px 51px;width: 100%;}
 #header #works ul li{float: left;width:33.3333%;}
@@ -84,6 +83,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #container #main a:hover,#container #main a:focus{background: url(../images/main/btn_scroll_over.png) 0 0 no-repeat;transition: background 1.5s;}
 #container #main a:hover span,#container #main a:focus span{color:#ff9600;transition: color 2s;}
 #container #skill{background-color: #CCCBCA;padding-bottom: 80px;}
+#container #skill h2{margin-bottom: 50px;}
 #container #skill p{font-size: 18px;padding-bottom: 90px;padding-left: 280px;color:#2f2c28;background: url(../images/skill/bg_html.png) 50px 0 no-repeat;width: 100%;max-width:620px;margin: 0 auto;}
 #container #skill p+p{background: url(../images/skill/bg_css.png) 0 0 no-repeat;}
 #container #skill p+p+p{background: url(../images/skill/bg_js.png) 100px 0 no-repeat;padding-bottom: 80px;}
