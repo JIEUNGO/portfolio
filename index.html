@@ -175,26 +175,42 @@
 				<div class="table_wrap">
 					<span>EMAIL: fulgidg@naver.com</span>
 					<div class="table">
-						<form action="#">
-							<div>
-								<p class="table_row">
-									<span class="table_cell"><label for="uer_name">이름</label></span>
-									<span class="table_cell"><input type="text" name="uer_name" id="uer_name"></span>
-								</p>
-								<p class="table_row">
-									<span class="table_cell"><label for="uer_phone">연락처</label></span>
-									<span class="table_cell"><input type="text" name="uer_phone" id="uer_phone"></span>
-								</p>
-								<p class="table_row">
-									<span class="table_cell"><label for="uer_email">이메일</label></span>
-									<span class="table_cell"><input type="text" name="uer_email" id="uer_email"></span>
-								</p>
-								<p class="table_row">
-									<span class="table_cell"><label for="uer_text">내용</label></span>
-									<span class="table_cell"><textarea name="uer_text" id="uer_text" cols="80" rows="10"></textarea></span>
-								</p>
-							</div>
-							<input type="submit" value="SEND">
+						<form action="/portfolio/bbs/write_update.php" method="post">
+							<fieldset>
+								<legend>CONTACT</legend>
+								<div>
+									<p class="table_row">
+										<span class="table_cell"><label for="uer_name">이름</label></span>
+										<span class="table_cell"><input type="text" name="wr_name" id="uer_name"></span>
+									</p>
+									<p class="table_row">
+										<span class="table_cell"><label for="uer_phone">연락처</label></span>
+										<span class="table_cell"><input type="text" name="wr_homepage" id="uer_phone"></span>
+									</p>
+									<p class="table_row">
+										<span class="table_cell"><label for="uer_email">이메일</label></span>
+										<span class="table_cell"><input type="text" name="wr_email" id="uer_email"></span>
+									</p>
+									<p class="table_row">
+										<span class="table_cell"><label for="uer_text">내용</label></span>
+										<span class="table_cell"><textarea name="wr_content" id="uer_text" cols="80" rows="10"></textarea></span>
+									</p>
+								</div>
+								<input type="hidden" name="uid" value="17020315161839">
+								<input type="hidden" name="w" value="">
+								<input type="hidden" name="bo_table" value="memo">
+								<input type="hidden" name="wr_id" value="0">
+								<input type="hidden" name="sca" value="">
+								<input type="hidden" name="sfl" value="">
+								<input type="hidden" name="stx" value="">
+								<input type="hidden" name="spt" value="">
+								<input type="hidden" name="sst" value="">
+								<input type="hidden" name="sod" value="">
+								<input type="hidden" name="page" value="">
+								<input type="hidden" name="wr_name" value="방문자" >
+                <input type="hidden" name="wr_password" value="1234" >
+								<input type="submit" value="SEND">
+							</fieldset>
 						</form>
 					</div>
 				</div>
