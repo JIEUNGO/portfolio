@@ -68,7 +68,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #header #works .site1 span{display: none;}
 #header #works a:hover .site1 span{display: inline-block;border: 1px solid #fff;border-radius:5px;padding: 5px;position: absolute;top: 50%;margin-top: -30px;left: 50%;margin-left: -20px;}
 #header #works a:hover .site1{background: url(../images/work/bg_dim.png) 0 0;opacity: 1;}
-#header #works figure figcaption{text-align: center;padding: 10px 0;line-height: 22px;color:#3c3c3c;}
+#header #works figure figcaption{text-align: center;padding: 10px 0;line-height: 22px;color:#3c3c3c;margin-bottom: 60px;}
 #header #works figure figcaption span{font-weight: bold;line-height: 35px;font-size: 16px;}
 #header #works figure figcaption a{display: inline-block;background-color: #D0C6B8;color: #fff;font-size: 12px;margin-top: 10px;padding: 2px 5px;border-radius: 5px;}
 #header #works figure figcaption a:hover{background-color: #6d6053;transition: all 0.5s;-webkit-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;-moz-transition: all 0.5s;}
@@ -101,6 +101,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #container #contact h2{background-image: url(../images/common/bullet_contact.png);color:#CCCBCA;}
 #container #contact .table_wrap{width: 100%;max-width: 675px;}
 #container #contact span{color:#CCCBCA;}
+#container #contact .myAdmin{font-size: 12px;color: #CCCBCA;float:right;}
 #container #contact div{display: table;margin: 0 auto;}
 #container #contact form div{border-top: 1px solid #CCCBCA;border-bottom: 1px solid #CCCBCA;padding: 20px 0;margin-bottom: 25px;}
 #container #contact form .table_row{display: table-row;}
@@ -118,6 +119,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 	#header #works ul li{width:50%;}
 }
 @media (max-width: 1024px){
+	#header #works ul li{height: auto;}
 	#container #main h2{padding:120px 50px 0;font-size: 38px;color:#cccbca;background-image: none;}
 	#container #main h2 span{font-size: 50px;}
 	#container #main h3{font-size: 18px;padding: 20px 0 0 70px;}

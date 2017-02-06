@@ -21,7 +21,46 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.smoove.min.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
-<!-- 	<script type="text/javascript" src="js/jquery.backgroundSize.js"></script> -->
+	<script type="text/javascript">
+		$(function(){
+			function memoUpdate(e){
+				e.preventDefault();
+				var ts = $(this);
+				var myUrl = ts.attr("action");
+				var myContent =	$("#uer_email").val() + "\n\n" + $("#uer_text").val();
+				$("#uer_text").val();
+				$("#uer_text").val(myContent);
+				var myData = $(this).serialize();
+				$.ajax({
+					url:myUrl,
+					type:"POST",
+					data:myData,
+					success:function(){
+						$("#uer_name").val("");
+						$("#uer_email").val("");
+						$("#uer_title").val("");
+						$("#uer_text").val("");
+						alert("정상적으로 등록되었습니다");
+					},
+					error:function(){
+						alert("입력하다 문제가 발생하였습니다!");
+					}
+				});
+			}
+			$("#memo_f").on("submit", memoUpdate);
+			$(".myAdmin").on("click",function(e){
+				e.preventDefault();
+				var pw = prompt("비밀번호를 입력하세요","");
+				var pw2 = $("#my_pw").val();
+
+				if(pw == pw2) {
+					window.open("index_2.php");
+				} else{
+					alert("비밀번호가 일치하지 않습니다.");
+				}
+			});
+		});
+	</script>
   <script type="text/javascript" src="js/main.js"></script>
   <title>JI-EUN GO ─ WEB PUBLISHER</title>
  </head>
@@ -76,7 +115,7 @@
 								</a>
 							</div>
 							<figcaption>
-								<span>구로도서관<br /></span>
+								<span>구로도서관(팀프로젝트)<br /></span>
 								반응형웹<br />
 								<strong>HTML5 / CSS3 / JAVASCRIPT (SASS, GULP사용)<br /></strong>
 								<a href="http://ggozi.ivyro.net/guro/guro-list" target="_blank">CORDING LIST</a>
@@ -172,10 +211,11 @@
 			</section>			
 			<section id="contact">
 				<h2>CONTACT</h2>
-				<div class="table_wrap">
+				<div class="table_wrap clearFix">
 					<span>EMAIL: fulgidg@naver.com</span>
+					<a href="#" class="myAdmin">ADMIN</a>
 					<div class="table">
-						<form action="/portfolio/bbs/write_update.php" method="post">
+						<form action="/portfolio/bbs/write_update.php" method="post" id="memo_f">
 							<fieldset>
 								<legend>CONTACT</legend>
 								<div>
@@ -184,12 +224,12 @@
 										<span class="table_cell"><input type="text" name="wr_name" id="uer_name"></span>
 									</p>
 									<p class="table_row">
-										<span class="table_cell"><label for="uer_phone">연락처</label></span>
-										<span class="table_cell"><input type="text" name="wr_homepage" id="uer_phone"></span>
-									</p>
-									<p class="table_row">
 										<span class="table_cell"><label for="uer_email">이메일</label></span>
 										<span class="table_cell"><input type="text" name="wr_email" id="uer_email"></span>
+									</p>
+									<p class="table_row">
+										<span class="table_cell"><label for="uer_title">제목</label></span>
+										<span class="table_cell"><input type="text" name="wr_subject" id="uer_title"></span>
 									</p>
 									<p class="table_row">
 										<span class="table_cell"><label for="uer_text">내용</label></span>
@@ -207,8 +247,8 @@
 								<input type="hidden" name="sst" value="">
 								<input type="hidden" name="sod" value="">
 								<input type="hidden" name="page" value="">
-								<input type="hidden" name="wr_name" value="방문자" >
                 <input type="hidden" name="wr_password" value="1234" >
+								<input type="hidden" name="my_pw" value="1130" id="my_pw">
 								<input type="submit" value="SEND">
 							</fieldset>
 						</form>
